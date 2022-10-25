@@ -1,0 +1,30 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@wdio/allure-reporter": "^7.25.2",
+        "@wdio/cli": "^7.25.2",
+        "@wdio/crossbrowsertesting-service": "^7.25.2",
+        "@wdio/local-runner": "^7.25.2",
+        "@wdio/mocha-framework": "^7.25.2",
+        "@wdio/selenium-standalone-service": "^7.25.1",
+        "@wdio/spec-reporter": "^7.25.1",
+        "chromedriver": "^106.0.1",
+        "wdio-chromedriver-service": "^8.0.0",
+        "wdio-docker-service": "^3.2.1"
+    },
+    "scripts": {
+        "allure:generate": "npx allure generate allure-results --clean",
+        "allure:open": "npx allure open",
+        "chrome": "wdio run configs/chrome.conf.js",
+        "chromeHeadless": "wdio run configs/chromeHeadless.conf.js",
+        "firefox": "wdio run configs/firefox.conf.js",
+        "firefoxHeadless": "wdio run configs/firefoxHeadless.conf.js",
+        "edge": "wdio run configs/edge.conf.js",
+        "edgeHeadless": "wdio run configs/edgeHeadless.conf.js"
+    },
+    "dependencies": {
+        "allure-commandline": "^2.18.1"
+    }
+}
