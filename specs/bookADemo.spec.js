@@ -23,7 +23,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('9856433567')
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(10))
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();
         await expect(BookADemoPage.errorMessage).toHaveText('This field is required.')
@@ -36,7 +36,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setCompanyName(Randomize.randomeString());
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
-        await BookADemoPage.setPhoneNumber('9856433567');
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(10));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();
@@ -51,7 +51,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('985-643-356-7');
+        await BookADemoPage.setPhoneNumber(' ' + Randomize.randomeNumber(8));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();
@@ -66,7 +66,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('7');
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(1));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();
@@ -81,7 +81,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('1234567852123456');
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(16));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();
@@ -96,7 +96,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('123456785212356');
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(15));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(browser).toHaveUrlContaining('https://telnyx.com/thank-you')
@@ -108,9 +108,9 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setLastName(Randomize.randomeString());
         await BookADemoPage.setCompanyName(Randomize.randomeString());
         await BookADemoPage.setJobTitle(Randomize.randomeString());
-        await BookADemoPage.setCompanyEmail('ahsfbf@d.');
+        await BookADemoPage.setCompanyEmail(Randomize.randomeString());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('123456785212356');
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(10));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();
@@ -125,7 +125,7 @@ describe('Book a demo page features', () => {
         await BookADemoPage.setJobTitle(Randomize.randomeString());
         await BookADemoPage.setCompanyEmail(Randomize.randomeEmail());
         await BookADemoPage.selectCountry();
-        await BookADemoPage.setPhoneNumber('12345');
+        await BookADemoPage.setPhoneNumber(Randomize.randomeNumber(5));
         await BookADemoPage.chooseUseCase()
         await BookADemoPage.clickApplyButton()
         await expect(BookADemoPage.errorMessage).toBeDisplayed();

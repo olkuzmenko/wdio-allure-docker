@@ -22,7 +22,8 @@
         "firefox": "wdio run configs/firefox.conf.js",
         "firefoxHeadless": "wdio run configs/firefoxHeadless.conf.js",
         "edge": "wdio run configs/edge.conf.js",
-        "edgeHeadless": "wdio run configs/edgeHeadless.conf.js"
+        "edgeHeadless": "wdio run configs/edgeHeadless.conf.js",
+        "docker": "wdio run configs/docker.conf.js"
     },
     "dependencies": {
         "allure-commandline": "^2.18.1"

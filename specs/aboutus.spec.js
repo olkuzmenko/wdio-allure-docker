@@ -17,7 +17,4 @@ describe('About us page features', () => {
         await expect(AboutUsPage.downloadSetLink).toHaveAttributeContaining('href', '.zip')
     });
 
-
-
-
 });
